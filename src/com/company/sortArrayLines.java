@@ -3,7 +3,7 @@ package com.company;
 import java.util.Arrays;
 
 public class sortArrayLines {
-    public void printMatrix(int[][] my_array){
+    public static void printMatrix(int[][] my_array){
         for(int i=0;i<my_array.length;i++){
             for(int j=0;j<my_array.length;j++){
                 System.out.format("%d ", my_array[i][j]);
@@ -11,10 +11,10 @@ public class sortArrayLines {
         }
 
     }
-    public int[][] sort() {
-        int[][] my_array = {{5, 9, 1},
-                            {1, 3, 4},
-                            {0, 1, 2}};
+    public int[][] sort(int my_array[][]) {
+       // int[][] my_array = {{5, 9, 1},
+                          //  {1, 3, 4},
+                        //    {0, 1, 2}};
         boolean existChanges = true;
         sumArrayRows my_object = new sumArrayRows();
         int[] temp;
